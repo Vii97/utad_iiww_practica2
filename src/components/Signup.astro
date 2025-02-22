@@ -1,0 +1,26 @@
+---
+import styles from '../styles/signup.module.scss'
+---
+<div class={styles.container}>
+<div class={styles.signup}>
+   
+    <form>
+        <h2>Inicio de sesión</h2>
+        <input type="text" placeholder= "E-m@il" required aria-required="true">
+        <input type="password" placeholder= "Contraseña" required aria-required="true">
+        <input class="submit" type="submit">
+        <a>¿Has olvidado tu contraseña?</a>
+    </form>
+
+    <form>
+        <h2>¿Aún no te has registrado...?</h2>
+        <input type="text" placeholder= "Nombre de usuario"required aria-required="true">
+        <input type="text" placeholder= "E-m@il" required aria-required="true">
+        <input type="password" placeholder= "Contraseña"required aria-required="true" >
+        <input type="password" placeholder= "Repite la contraseña" required aria-required="true">
+        <input class="submit" type="submit">
+        <a>Recuerda que la contraseña debe contener al menos 8 caracteres, una mayúscula, una minúscula y un carácter especial.</a>
+    </form>
+</div>
+</div>
+

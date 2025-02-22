@@ -1,0 +1,33 @@
+---
+import styles from '../styles/nav.module.scss'
+---
+
+<nav class={styles.nav}>
+    <div class={styles.items}>
+      <a class={styles.home} href="/">Inicio</a>
+      <a class={styles.home} href="/">Categorías</a>
+      <a class={styles.home} href="/">Dónde estamos</a>
+      <a class={styles.home} href="/">Eventos</a>
+  </div>
+    
+    <div class={styles.search}>
+      <input type="text" placeholder="Busca aquí..." />
+      <button role= "button" aria-label= "Haz click para buscar">
+        <img src="/lupa.png" alt="Buscar" />
+      </button>
+    </div>
+  
+    <div class={styles.icons}>
+      <button role= "button" aria-label= "Haz click para ver el carrito">
+        <a href="/shopping-cart">
+          <img width="20" src="/carrito-de-compras.png" alt="Carrito de compra" />
+        </a>
+      </button>
+      <button role= "button" aria-label= "Haz click para ver el perfil de usuario">
+        <a href="/sign-up">
+          <img src="/usuario.png" alt="Icono de usuario" />
+        </a>
+      </button>
+    </div>
+
+  </nav>

@@ -1,0 +1,25 @@
+---
+import styles from '../styles/product.module.scss'
+---
+<div class={styles.undo}>
+<a href="/">Atrás</a>
+</div>
+<div class={styles.product}>
+    <div class={styles.container}>
+        <div class={styles.images}>
+            <img class={styles.mainimage} width="250" src="/home-pan.jpg" alt="Pan casero">
+            <div class={styles.twoimages}>
+                <img width="125" src="/pan1.jpg" alt="Pan">
+                <img width="125" src="/pan2.jpg" alt="Pan">
+            </div>
+        </div>
+        <div class={styles.description}>
+            <h2>Pan casero</h2>
+            <p>Pan blanco de trigo. Contiene harina, agua, sal, levadura, azúcar y leche.</p>
+            <h1>2€</h1>
+            <input type="number" min="1" value="1" aria-label= "Elige la cantidad de productos">
+            <button role= "button" aria-label= "Haz click para añadir al carrito">Añadir</button>
+            <a href="/check-out" role= "button" aria-label= "Haz click para comprar">Comprar</a>
+        </div>
+    </div>
+</div>

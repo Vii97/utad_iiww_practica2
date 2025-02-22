@@ -1,0 +1,70 @@
+$bg: #f8edeb;
+$link: #9a3e3e;
+$info: #333333;
+$secondary:#f0aeae; 
+$highlight: #d03f4e;
+
+.cart {
+    display: flex;
+}
+
+table {
+    border-collapse: collapse;  
+    width: 80%;  
+    margin: 0 auto;  
+    border-color: $secondary;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid $secondary;
+    text-align: center;
+    color: $info;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .finish {
+    align-items: center;
+    padding: 1em;
+    border: none;
+    border-radius: 50px;
+    background-color: $secondary;
+
+    animation: bounce 1s infinite; 
+    
+    transition: background-color 0.5s ease, color 0.5s ease;
+  
+    &:hover {
+    background-color: $highlight;
+    color: white;
+    }
+
+    @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1em);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  }
+  
+  .delete {
+    border-style: none;
+    background: none;
+    cursor: pointer;
+
+    transition: transform 0.5s ease;
+
+    &:hover {
+        transform: scale(1.3) rotate(40deg);
+      }
+  }

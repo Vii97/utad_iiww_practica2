@@ -1,0 +1,17 @@
+.container {
+    padding-bottom: 2em;
+}
+
+.signup {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    place-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    a {
+        font-size: small;
+        text-align: center;
+    }
+}

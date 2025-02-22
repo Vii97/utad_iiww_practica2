@@ -1,0 +1,78 @@
+---
+import styles from '../styles/cart.module.scss'
+---
+
+<h2>Carrito</h2>
+<div class={styles.cart}>
+<table border="2">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Eliminar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <div>
+                    <a href="/product1">
+                        <img width="90" src="/home-croissant.jpg" alt="Croissant">
+                    </a>
+                    <p>Croissant</p>
+                </div>
+            </td>
+            <td>5</td>
+            <td>8,75 €</td>
+            <td>
+                <button class={styles.delete} aria-label="Eliminar Croissant">
+                    <img width="40" src="/eliminar.png" alt="Eliminar Croissant">
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <a href="/product1">
+                        <img width="90" src="/home-cupcake.jpg" alt="Cupcake">
+                    </a>
+                    <p>Cupcake</p>
+                </div>
+            </td>
+            <td>1</td>
+            <td>3 €</td>
+            <td>
+                <button class={styles.delete} aria-label="Eliminar Cupcake">
+                    <img width="40" src="/eliminar.png" alt="Eliminar Cupcake">
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <a href="/product1">
+                        <img width="90" src="/home-pan.jpg" alt="Pan casero">
+                    </a>
+                    <p>Pan casero</p>
+                </div>
+            </td>
+            <td>2</td>
+            <td>4 €</td>
+            <td>
+                <button class={styles.delete} aria-label="Eliminar Pan casero">
+                    <img width="40" src="/eliminar.png" alt="Eliminar Pan casero">
+                </button>
+            </td>
+        </tr>    
+        <tr>
+            <td colspan="2"><strong>TOTAL</strong></td>
+            <td colspan="2"><strong>15,75 €</strong></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<div class={styles.container}>
+    <a class={styles.finish} href="/check-out">Finalizar compra</a>
+</div>

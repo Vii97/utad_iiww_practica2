@@ -1,3 +1,5 @@
+Hecho por Victoria Rodríguez Álvarez 2ºDAWD online - Desarrollo de Interfaces Web
+
 # Astro Starter Kit: Basics
 
 ```sh
